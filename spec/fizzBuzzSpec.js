@@ -2,7 +2,7 @@ describe('Javabuzz', function() {
 
   var javabuzz;
 
-  describe('knows what a number is', function(){
+  describe('knows when a number is', function(){
 
     it('divisible by 3', function() {
       javabuzz = new Javabuzz();
@@ -10,5 +10,15 @@ describe('Javabuzz', function() {
     });
 
   });
+
+  describe('knows when a number is not', function(){
+
+    it('divisible by 3', function() {
+      javabuzz = new Javabuzz();
+      expect(javabuzz.isDivisibleByThree(1)).toBe(false);
+    });
+
+  });
+
 
 });
