@@ -11,3 +11,9 @@ Javabuzz.prototype.isDivisibleByFive = function(number) {
 Javabuzz.prototype.isDivisibleByFiveAndThree = function(number) {
   return (number % 5 === 0) && (number % 3 === 0);
 };
+
+Javabuzz.prototype.says = function(number) {
+  if (this.isDivisibleByThree(number)) {
+    return "Fizz";
+  }
+};
