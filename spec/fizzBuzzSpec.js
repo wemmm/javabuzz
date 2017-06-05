@@ -4,8 +4,9 @@ describe('Javabuzz', function() {
 
   describe('knows what a number is', function(){
 
-    it('is divisble by 3', function() {
+    it('divisible by 3', function() {
       javabuzz = new Javabuzz();
+      expect(javabuzz.isDivisibleByThree(3)).toBe(true);
     });
 
   });
