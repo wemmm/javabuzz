@@ -49,4 +49,14 @@ describe('when playing, says', function() {
     expect(javabuzz.says(3)).toEqual("Fizz");
   });
 
+  it('"Buzz" when a number is divisible by 5', function() {
+    javabuzz = new Javabuzz();
+    expect(javabuzz.says(5)).toEqual("Buzz");
+  });
+
+  it('"Fizz" when a number is divisible by 5 and 3', function() {
+    javabuzz = new Javabuzz();
+    expect(javabuzz.says(15)).toEqual("Fizzbuzz");
+  });
+
 });
